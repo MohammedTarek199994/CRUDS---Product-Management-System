@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* ----------------------------------------------------------------- */
+body{
+    /* background-color: rgb(108, 76, 76); */
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : #fff ; 
+    font-family: system-ui;
+}
+
+/* ----------------------------------------------------------------- */
+.crud { 
+    width:80% ; 
+    margin: auto;
+}
+/* ----------------------------------------------------------------- */
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 4px;
+    margin-bottom:20px ;
+}
+/* ----------------------------------------------------------------- */
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(57, 56, 56, 0.919);
+
+    margin: 7px 0px;
+    padding: 10px;
+    color: bisque;
+}
+/* ----------------------------------------------------------------- */
+input:focus {
+    background-color: rgb(84, 84, 84);
+    transform: scale(1.05);
+}
+/* ----------------------------------------------------------------- */
+.price{
+    display: flex;
+    flex-direction : row ;
+}
+/* ----------------------------------------------------------------- */
+.price input{
+    width: 20%;
+    margin: 5px 2px;
+}
+/* ----------------------------------------------------------------- */
+#total {
+    background-color: #852c2c;
+    justify-items: center;
+    text-align: center;
+    width: 15%;
+    margin: 15px 4px;
+    height: 30px;
+} 
+/* ----------------------------------------------------------------- */
+#total::before {
+    content: "Total ::";
+}
+/* ----------------------------------------------------------------- */
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #716a1d;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* ----------------------------------------------------------------- */
+button:hover{
+    background-color: #51025f;
+    letter-spacing: 1px;
+}
+/* ----------------------------------------------------------------- */
+.btnSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+/* ----------------------------------------------------------------- */
+.btnSearch button {    
+    width: 40%;
+}
+/* ----------------------------------------------------------------- */
+table{
+    text-align: center;
+    width: 100%;
+    margin: 10px 10px;
+    
+}
+/* ----------------------------------------------------------------- */
+#table-header{
+    text-transform: uppercase;
+  
+}
+/* ----------------------------------------------------------------- */
+th,td{
+    padding: 5px 5px;
+    margin: 30px 30px;
+
+    
+}
+table tr{
+    border : 5px  solid black;
+}
+/* ----------------------------------------------------------------- */
+#deleteAll {
+    margin: 4px 4px;
+    padding: 4px 4px;
+    width: 100%;
+}
+/* ----------------------------------------------------------------- */
+
