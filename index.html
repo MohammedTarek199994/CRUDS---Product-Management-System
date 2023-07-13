@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="crud">
+<!--**************************************** -->
+    <div class="head">
+        <h2> &<&< Mohammed Tarek &>&> </h2>
+        <p>product management system (cruds)</p>
+    </div>
+    
+<!--**************************************** -->
+    <div class="inputs">
+        <input id="title" type="text" placeholder="Title"/>
+
+        <div class="price"> 
+            <input onkeyup="getTotal()"  id="price" type="number" placeholder="Price"/>
+            <input onkeyup="getTotal()" id="taxes" type="number" placeholder="Taxes"/>
+            <input onkeyup="getTotal()" id="ads" type="number" placeholder="Ads"/>
+            <input onkeyup="getTotal()" id="discount" type="number" placeholder="Discount"/>
+            <small onkeyup="getTotal()" id="total">0000 $</small>
+        </div>
+
+        <input id="count" type="number" placeholder="Count"/>
+        <input id="category" type="text" placeholder="category"/>
+        
+        <button id="submit"> Create </button> 
+
+    </div>
+<!--**************************************** -->
+    <div class="outputs">
+        <input onkeyup="searchData(this.value)" id="search" type="text" placeholder="Search"/>
+         
+        <div class="btnSearch">
+        <button onclick="getSearchMood (this.id)" id="searchTitle"> Search by Title </button>  
+        <button onclick="getSearchMood (this.id)" id="searchCategory"> Search by Category</button> 
+        </div>
+
+        <div id="deleteAll">
+            <!-- Button to delete all if products founded  -->
+        </div>
+
+
+        <table class="table">
+            <tr id="table-header">
+                <td>id</td>
+                <td>title</td>
+                <td>price</td>
+                <td>taxes</td>
+                <td>ads</td>
+                <td>discount</td>
+                <td>total</td>
+                <td>category</td>
+                <td>update</td>
+                <td>delete</td>
+            </tr>
+
+            <tbody id="tbody">
+              <!-- Table for products -->
+          </tbody>
+
+        </table>
+
+    </div>
+<!--**************************************** -->
+
+</div>
+
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
